@@ -1,0 +1,78 @@
+/***********************************************************
+
+    Author: Destiny Lewis
+    Course: DGL-213 Applied JavaScript
+    Section: DLU-1
+    Instructor: Bradley Best
+    Last Modified: October 19th 2021
+    styles.css
+    
+***********************************************************/
+
+/* General Styles */
+
+body {
+    background-color: #FFFEEC;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Game Elements Layout */
+
+#gameContent {
+    background-color: #AEDDCD;
+    display: block;
+    max-width: 50%;
+    margin: auto;
+}
+
+#gameboard {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+#instructions {
+    max-width: 33%;
+    margin: 20px;
+}
+
+#ui {
+    margin: auto;
+    padding: 10px;
+    background-color: #AEDDCD;
+}
+
+#ui button {
+    margin: 5px 20px 10px 10px;
+}
+
+#scores {
+    display: inline-block;
+    margin: auto;
+    padding: 50px;
+}
+
+/*** Media Queries ***/
+
+/* Since our gameboard normally only takes up half the overall width of its container, we can increase this max width to ensure
+that our gameboard displays correctly on laptop screens using media queries to specify points when the max width should increase. */
+
+/*** Laptop Screens between 1251px and 1600px in width ***/
+@media screen and (max-width: 1600px) {
+
+    #gameContent {
+        max-width: 70%;
+    }
+
+}
+
+/*** Laptop Screens up to 1250px in width ***/
+@media screen and (max-width: 1250px) {
+
+    #gameContent {
+        max-width: 85%;
+    }
+}
